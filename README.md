@@ -1,1 +1,2 @@
 # Reddit
+npm i
