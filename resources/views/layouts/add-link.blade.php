@@ -36,7 +36,6 @@
             <div class="form-group card-footer">
                 <button class="btn btn-primary">Contribute Link</button>
             </div>
+        </form>
     </div>
-
-    </form>
 </div>
