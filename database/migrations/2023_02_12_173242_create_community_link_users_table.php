@@ -13,14 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('community_links', function (Blueprint $table) {
-
+        Schema::create('community_link_users', function (Blueprint $table) {
             $table->id();
             $table->integer('user_id')->index();
-            $table->integer('channel_id')->index();
-            $table->string('title');
-            $table->string('link');
-            $table->boolean('approved')->default(0);
+            $table->integer('community_link_id')->index();
             $table->timestamps();
         });
     }
@@ -32,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('community_links');
+        Schema::dropIfExists('community_link_users');
     }
 };
